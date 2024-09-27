@@ -91,7 +91,7 @@ const App = () => {
     return (
         <div className="App">
             <div className="navbar">
-                <h1>Volunteer Management System</h1>
+                <h1>Volunteer Matching Platform</h1>
             </div>
 
             <div className="hero-section">

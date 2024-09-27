@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Navbar = () => {
-  return <div className="navbar">Volunteer Management System</div>;
+  return <div className="navbar">Volunteer Matching  Platform</div>;
 };
 
 export default Navbar;
