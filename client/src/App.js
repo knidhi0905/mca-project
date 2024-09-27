@@ -14,7 +14,7 @@ const App = () => {
 
     const fetchVolunteerData = async () => {
         try {
-            const response = await fetch("http://localhost:5000/vols", {
+            const response = await fetch("/vols", {
                 headers: {
                     Authorization: localStorage.getItem("token"),
                 },
@@ -42,7 +42,7 @@ const App = () => {
     const handleApprove = async (volunteerId) => {
         try {
             const approveResponse = await fetch(
-                "http://localhost:5000/approveVolunteer",
+                "/approveVolunteer",
                 {
                     method: "POST",
                     headers: {
@@ -66,7 +66,7 @@ const App = () => {
     const handleRemoveFromRequests = async (volunteerId) => {
         try {
             const response = await fetch(
-                "http://localhost:5000/removeFromRequests",
+                "/removeFromRequests",
                 {
                     method: "POST",
                     headers: {

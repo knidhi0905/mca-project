@@ -6,7 +6,7 @@ const VolunteerRequests = ({ volunteerData, setVolunteerData }) => {
     const handleApprove = async (volunteerId) => {
         try {
             const response = await fetch(
-                "http://localhost:5000/approveVolunteer",
+                "/approveVolunteer",
                 {
                     method: "POST",
                     headers: {
@@ -33,7 +33,7 @@ const VolunteerRequests = ({ volunteerData, setVolunteerData }) => {
 
     const fetchVolunteerData = async () => {
         try {
-            const response = await fetch("http://localhost:5000/vols");
+            const response = await fetch("/vols");
             if (!response.ok) {
                 throw new Error("Failed to fetch volunteer data");
             }

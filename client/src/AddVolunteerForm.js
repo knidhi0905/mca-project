@@ -20,7 +20,7 @@ const AddVolunteerForm = ({ fetchVolunteerData }) => {
 
         try {
             const response = await fetch(
-`http://localhost:5000/addVolunteer`, {
+`/addVolunteer`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
