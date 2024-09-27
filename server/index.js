@@ -3,12 +3,15 @@ require('dotenv').config()
 // server/index.js
 const express = require("express");
 const cors = require("cors");
+const path = require('path');
 const mongoose = require("mongoose");
 
 const app = express();
-const port = 5000;
+const port = 80;
 
 app.use(cors());
+// Serve the static files from the React app's build folder
+app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(express.json());
 
 // Connect to MongoDB 
